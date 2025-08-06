@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-container">
+            <p>
+                Sign up and get 20% off to your first order. <a class="sign-up-now">Sign Up Now</a>
+            </p>
+            <span>
+                <!-- Cross Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-x-icon lucide-x">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    <!-- Header & Navigations -->
+    <header>
+        <div class="header-container">
+            <div class="menu-icon-container">
+                <div class="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu-icon lucide-menu">
+                        <path d="M3 12h18" />
+                        <path d="M3 6h18" />
+                        <path d="M3 18h18" />
+                    </svg>
+                </div>
+                <div class="logo">SHOP.CO</div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="shop-dropdown">
+                        <span>Shop</span>
+                        <!-- Down Icon -->
+                        <svg id="shop-dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-down-icon lucide-chevron-down">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </li>
+                    <li>On Sale</li>
+                    <li>New Arrivals</li>
+                    <li>Brands</li>
+                </ul>
+            </nav>
+            <div class="search">
+                <!-- Search Icons -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search-icon lucide-search">
+                    <path d="m21 21-4.34-4.34" />
+                    <circle cx="11" cy="11" r="8" />
+                </svg>
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <div class="button-icons">
+                <!-- Card Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
+                    <circle cx="8" cy="21" r="1" />
+                    <circle cx="19" cy="21" r="1" />
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                </svg>
+                <!-- User Profile Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-user-icon lucide-circle-user">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="10" r="3" />
+                    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="info-container">
+            <div class="text-group">
+                <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
+                    individuality and cater to your sense of style.</p>
+                <div>
+                    <div class="show-now-button">Shop Now</div>
+                </div>
+            </div>
+            <!-- Large Screen -->
+            <ul class="stats-group">
+                <li class="stats-box">
+                    <span>200+</span>
+                    <p>International Brands</p>
+                </li>
+                <li class="vertical-line">
+                </li>
+                <li class="stats-box"><span>2,000+</span>
+                    <p>High-Quality Products</p>
+                </li>
+                <li class="vertical-line"></li>
+                <li class="stats-box"><span>30,000+</span>
+                    <p>Happy Customers</p>
+                </li>
+            </ul>
+            <!-- Small Screen -->
+            <ul class="stats-group-small">
+                <li class="two-stats-box">
+                    <div class="stats-box">
+                        <span>200+</span>
+                        <p>International Brands</p>
+                    </div>
+                    <div class="vertical-line">
+                    </div>
+                    <div class="stats-box"><span>2,000+</span>
+                        <p>High-Quality Products</p>
+                    </div>
+                </li>
+                <li id="small-last-stats-box" class="stats-box">
+                    <span>30,000+</span>
+                    <p>Happy Customers</p>
+                </li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="./assets/images/hero-image.png" alt="Hero Image" class="hero-image" />
+            <img class="vector-1" src="./assets/icons/vector-56.svg" alt="Vector 1">
+            <img class="vector-2" src="./assets/icons/vector-103.svg" alt="Vector 2">
+        </div>
+    </div>
+</body>
+
+</html>

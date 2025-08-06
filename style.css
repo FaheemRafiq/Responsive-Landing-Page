@@ -1,0 +1,409 @@
+/* ================== Global CSS =================== */
+
+/* Integral */
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('./assets/fonts/integralcf-regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Integral CF Bold';
+    src: url('./assets/fonts/integralcf-bold.otf') format('opentype');
+}
+
+/* Satoshi */
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./assets/fonts/Satoshi-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Satoshi Medium';
+    src: url('./assets/fonts/Satoshi-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Satoshi Bold';
+    src: url('./assets/fonts/Satoshi-Bold.otf') format('opentype');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    all: unset;
+    /* Resets all properties to their initial values */
+    -webkit-appearance: none;
+    /* Removes Webkit-specific default styling */
+    -moz-appearance: none;
+    /* Removes Mozilla-specific default styling */
+    appearance: none;
+    /* Removes default user-agent styling */
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+/* ================== Banner Section =================== */
+
+.banner {
+    padding: 0px 100px;
+    /* Default Padding */
+    /* height: 38px; */
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container {
+    padding: 7px 0px;
+    width: 100%;
+    display: flex;
+}
+
+.banner p {
+    flex: 1;
+    font-family: 'Satoshi';
+    text-align: center;
+}
+
+.sign-up-now {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}
+
+.banner-container span {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        padding: 5px 20px;
+        /* Default Padding */
+    }
+
+    .banner p {
+        font-size: 12px;
+    }
+
+    .banner-container span {
+        display: none;
+    }
+}
+
+/* ================== Header Section =================== */
+
+header {
+    padding: 20px 100px;
+    /* Default Padding */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    gap: 40px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.header-container .logo {
+  font-family: 'Integral CF Bold', sans-serif;
+  font-size: 40px;
+  transform: translateY(-5px);
+}
+
+.header-container nav ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Satoshi';
+    font-size: 16px;
+    gap: 20px;
+}
+
+.header-container nav ul .shop-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#shop-dropdown-icon {
+    color: unset;
+}
+
+.header-container nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container .search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    height: 100%;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+.search input {
+    width: 100%;
+    margin-left: 5px;
+    font-family: 'Satoshi';
+}
+
+.button-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px 20px;
+        /* Default Padding */
+    }
+
+    .menu-icon-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-icon-container .menu-icon {
+        display: block;
+    }
+
+    .header-container .logo {
+        font-size: 25px;
+    }
+
+    .header-container nav,
+    .header-container .search {
+        display: none;
+    }
+}
+
+/* ================== Hero Section =================== */
+
+.hero-section {
+    padding: 0px 100px;
+    /* Default Padding */
+    background-color: #F2F0F1;
+    display: flex;
+}
+
+.info-container {
+    width: 46%;
+    padding: 103px 0px;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-container .text-group h1 {
+    font-family: 'Integral CF Bold';
+    font-size: 4rem;
+    /* 1rem = 16px */
+    line-height: 1;
+    word-spacing: 1px;
+    letter-spacing: 1.2px;
+}
+
+.info-container .text-group p {
+    font-family: 'Satoshi';
+}
+
+.info-container .text-group .show-now-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px 64px;
+    border-radius: 30px;
+    font-family: 'Satoshi Medium';
+    display: inline-block;
+    text-align: center;
+}
+
+.stats-group {
+    display: flex;
+    margin-top: 30px;
+}
+
+.stats-group-small {
+    display: none;
+}
+
+.stats-box {
+    min-width: 141px;
+}
+
+.vertical-line {
+    width: 0.1px;
+    background-color: #000000;
+    margin: 0px 35px;
+    opacity: 10%;
+}
+
+.stats-group li span,
+.stats-group-small li span {
+    padding: 5px 0px;
+    font-family: 'Satoshi Bold';
+    font-size: calc(2rem + 6px);
+}
+
+.stats-group li p,
+.stats-group-small li p {
+    font-family: 'Satoshi';
+    font-size: calc(1rem);
+}
+
+.image-container {
+    width: 54%;
+    position: relative;
+}
+
+.image-container .hero-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 96%;
+    padding: 42px 0px 0px 20px;
+}
+
+.image-container .vector-1 {
+    position: absolute;
+    left: 70px;
+    top: 297px;
+}
+
+.image-container .vector-2 {
+    position: absolute;
+    right: 55px;
+    top: 86px;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding: 0px 20px;
+        /* Default Padding */
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .info-container {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .info-container .text-group h1 {
+        font-size: calc(2rem + 6px);
+        /* 1rem = 16px */
+        letter-spacing: 1.5px;
+    }
+
+    .info-container .text-group p {
+        font-size: 14px;
+    }
+
+    .info-container .text-group .show-now-button {
+        display: block;
+    }
+
+    .stats-group {
+        display: none;
+    }
+
+    .stats-box {
+        min-width: auto;
+    }
+
+    .stats-group-small {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+        padding: 0px 46px;
+    }
+
+    .two-stats-box {
+        display: flex;
+    }
+
+    #small-last-stats-box {
+        align-self: center;
+    }
+
+    .stats-group-small .stats-box span {
+        font-size: 24px;
+    }
+
+    .stats-group-small .stats-box p {
+        font-size: 12px;
+    }
+
+    #second-vertical-line {
+        display: none;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 420px;
+    }
+
+    .image-container .hero-image {
+        bottom: 0px;
+        width: 119%;
+        right: -33px;
+        padding: 0px;
+    }
+
+    .image-container .vector-1 {
+        left: 0px;
+        top: 98px;
+    }
+
+    .image-container .vector-2 {
+        width: 76px;
+        right: 11px;
+        top: -24px;
+    }
+}
